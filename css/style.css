@@ -1,0 +1,154 @@
+.lang-th { display: none; }
+.lang-en { display: block; }
+
+body.th .lang-th { display: block; }
+body.th .lang-en { display: none; }
+
+body {
+    font-family: 'Sarabun', 'Noto Sans Thai', sans-serif !important;
+}
+
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #3B82F6;
+    border: 3px solid #BFDBFE;
+}
+
+.skill-bar {
+    transition: width 1.5s ease-in-out;
+}
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+.filter-btn.active {
+    background-color: #3B82F6;
+    color: white;
+}
+
+.modal {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Carousel */
+[data-carousel-item] {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Image */
+#imageLightbox {
+    transition: opacity 0.3s ease;
+}
+
+#lightboxImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in;
+    transition: transform 0.2s;
+}
+
+.cursor-zoom-in:hover {
+    transform: scale(1.02);
+}
+
+/* for แนวตั้ง */
+@media (orientation: portrait) {
+    #lightboxImage {
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+}
+
+/* for แนวนอน */
+@media (orientation: landscape) {
+    #lightboxImage {
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+}
+
+/*@media print {
+    body {
+        font-size: 10pt !important;
+        line-height: 1.4 !important;
+    }
+    h1 { font-size: 16pt !important; }
+    h2 { font-size: 14pt !important; }
+    h3 { font-size: 12pt !important; }
+    p, li {
+        font-size: 9pt !important;
+        margin-bottom: 4pt !important;
+    }
+}
+
+/*@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}*/
