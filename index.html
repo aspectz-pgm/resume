@@ -96,13 +96,13 @@
                     <p class="text-gray-700 mb-4">
                         <!-- <span class="lang-en">About Me</span>
                         <span class="lang-th">เกี่ยวกับฉัน</span> -->
-                        <span class="lang-en">Full Stack Development Expert with 5+ years of experience building web applications using modern technologies on</span>
-                        <span class="lang-en">both frontend and backend. Able to constantly learn and adapt to new technologies. Committed to creating </span>
-                        <span class="lang-en">efficient and scalable solutions with clean code to be a leader in web development or programming.</span>
+                        <span class="lang-en">Full Stack Development Expert with 5+ years of experience building web applications using modern technologies on both frontend and backend. Able to constantly learn and adapt to new technologies. Committed to creating efficient and scalable solutions with clean code to be a leader in web development or programming.</span>
 
-                        <span class="lang-th">ผู้เชี่ยวชาญด้านการพัฒนาแบบ Full Stack โดยมีความเชี่ยวชาญมีประสบการณ์มากกว่า 5 ปี ในการสร้างแอปพลิเคชันเว็บโดยใช้เทคโนโลยีสมัย</span>
-                        <span class="lang-th">ใหม่ทั้งในส่วน หน้าบ้าน และ หลังบ้าน สามารถเรียนรู้และปรับตัวให้เข้ากับเทคโนโลยีใหม่ๆ อยู่เสมอ มีความมุ่งมั่นในการสร้างโซลูชันที่มี</span>
-                        <span class="lang-th">ประสิทธิภาพและปรับขนาดได้พร้อมโค้ดที่สะอาดเพื่อให้เป็นผู้นำในการพัฒนาเว็บหรือเขียนโปรแกรมต่างๆ</span>
+                        <span class="lang-th mobile">ผู้เชี่ยวชาญด้านการพัฒนาแบบ Full Stack โดยมีความเชี่ยวชาญมีประสบการณ์มากกว่า 5 ปี ในการสร้างแอปพลิเคชันเว็บโดยใช้เทคโนโลยีสมัยใหม่ทั้งในส่วน หน้าบ้าน และ หลังบ้าน สามารถเรียนรู้และปรับตัวให้เข้ากับเทคโนโลยีใหม่ๆ อยู่เสมอ มีความมุ่งมั่นในการสร้างโซลูชันที่มีประสิทธิภาพและปรับขนาดได้พร้อมโค้ดที่สะอาดเพื่อให้เป็นผู้นำในการพัฒนาเว็บหรือเขียนโปรแกรมต่างๆ</span>
+
+                        <span class="lang-th web text-left">ผู้เชี่ยวชาญด้านการพัฒนาแบบ Full Stack โดยมีความเชี่ยวชาญมีประสบการณ์มากกว่า 5 ปี ในการสร้างแอปพลิเคชันเว็บโดยใช้เทคโนโลยีสมัย</span>
+                        <span class="lang-th web text-left">ใหม่ทั้งในส่วน หน้าบ้าน และ หลังบ้าน สามารถเรียนรู้และปรับตัวให้เข้ากับเทคโนโลยีใหม่ๆ อยู่เสมอ มีความมุ่งมั่นในการสร้างโซลูชันที่มี</span>
+                        <span class="lang-th web text-left">ประสิทธิภาพและปรับขนาดได้พร้อมโค้ดที่สะอาดเพื่อให้เป็นผู้นำในการพัฒนาเว็บหรือเขียนโปรแกรมต่างๆ</span>
                         <!-- <span class="lang-en">Experienced Full Stack Developer with 5+ years of expertise in building web applications. Specialized in PHP, JavaScript, Flutter, and database systems.</span>
                         <span class="lang-th">นักพัฒนา Full Stack มากประสบการณ์กว่า 5 ปี มีความเชี่ยวชาญในการสร้างแอปพลิเคชันเว็บ โดยเชี่ยวชาญใน PHP, JavaScript, Flutter และระบบฐานข้อมูล</span> -->
                     </p>
@@ -889,7 +889,6 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <i class="fa-regular fa-file-pdf"></i>
                     <span class="lang-en">Call Me</span>
                     <span class="lang-th">โทรหาฉัน</span>
                 </a>
@@ -1152,35 +1151,48 @@
 
         function initLanguage() {
             // save localStorage
-            localStorage.setItem('language', 'en');
+            var language = localStorage.getItem('language');
+
+            if(!language) localStorage.setItem('language', 'en');
 
             // load language
-            if (localStorage.getItem('language') === 'en') {
-                document.body.classList.add('en');
-            }
+            // language === 'en' ? document.body.classList.add('en'): document.body.classList.add('th');
 
             // Language switching functionality
             document.getElementById('switchToThai').addEventListener('click', function() {
-                document.body.classList.add('th');
                 localStorage.setItem('language', 'th');
-                document.getElementById('switchToThai').classList.add('bg-green-600', 'text-white');
-                document.getElementById('switchToThai').classList.remove('bg-gray-200');
-                document.getElementById('switchToEnglish').classList.add('bg-gray-200');
-                document.getElementById('switchToEnglish').classList.remove('bg-green-600', 'text-white');
+                setSwitchLanguage('th');
             });
             
             document.getElementById('switchToEnglish').addEventListener('click', function() {
-                document.body.classList.remove('th');
                 localStorage.setItem('language', 'en');
+                setSwitchLanguage('en');
+            });
+            
+            // Set initial language to English
+            language == 'en' ? setSwitchLanguage('en'): setSwitchLanguage('th');
+
+            // set for mobile or web
+            isMobile();
+        }
+
+        function setSwitchLanguage(lang) {
+            // Set initial language to English
+            if(lang == 'en') {
+                document.body.classList.remove('th');
+                document.body.classList.add('en');
                 document.getElementById('switchToEnglish').classList.add('bg-green-600', 'text-white');
                 document.getElementById('switchToEnglish').classList.remove('bg-gray-200');
                 document.getElementById('switchToThai').classList.add('bg-gray-200');
                 document.getElementById('switchToThai').classList.remove('bg-green-600', 'text-white');
-            });
-            
-            // Set initial language to English
-            document.body.classList.remove('th');
-            document.getElementById('switchToEnglish').classList.add('bg-green-600', 'text-white');
+            } else {
+                document.body.classList.remove('en');
+                document.body.classList.add('th');
+                document.getElementById('switchToThai').classList.add('bg-green-600', 'text-white');
+                document.getElementById('switchToThai').classList.remove('bg-gray-200');
+                document.getElementById('switchToEnglish').classList.add('bg-gray-200');
+                document.getElementById('switchToEnglish').classList.remove('bg-green-600', 'text-white');
+            }
         }
 
         function initSkillBars() {
@@ -1229,14 +1241,28 @@
                 // get current language
                 const currentLang = localStorage.getItem('language') || 'en';
 
+                // get is mobile
+                var isMobile = window.orientation > -1;
+
                 try {
+                    await forexportPDF(true);
                     // prepare content
                     const element = document.getElementById('pdf-content');
+
                     if (!element) throw new Error('ไม่พบส่วนเนื้อหา Resume');
                     
                     // create a clone and set specific CSS for PDFs
                     const clone = element.cloneNode(true);
-                    
+
+                    // delete span.mobile all
+                    clone.querySelectorAll('span.mobile').forEach(span => {
+                        if (span.parentNode.childNodes.length === 1) {
+                            span.parentNode.remove();
+                        } else {
+                            span.remove();
+                        }
+                    });
+
                     // create a wrapper container to manage padding and scaling.
                     const wrapper = document.createElement('div');
                     wrapper.style.width = '210mm';
@@ -1264,24 +1290,125 @@
                     
                     // set styles for PDF
                     const pdfStyles = document.createElement('style');
-                    pdfStyles.textContent = `
-                            * {
-                                font-size: 70%;
-                            }
+                    if(!isMobile) {
+                        pdfStyles.textContent = `
+                                * {
+                                    font-size: 70%;
+                                }
 
+                                /* only element mian */
+                                body, div, p, span, a, li, section, h3, h2, h1 {
+                                    font-size: 70% !important;
+                                }
+
+                                section * {
+                                    font-size: 70% !important;
+                                    margin-bottom: 0px !important;
+                                    margin-top: 1px !important;
+                                }
+
+                                .header * {
+                                    font-size: 70% !important;
+                                }
+
+                                .section-header {
+                                    margin-bottom: 0.5rem !important;
+                                }
+
+                                .header-contact {
+                                    margin-top: 0.5rem !important;
+                                }
+
+                                .header-contact a * {
+                                    font-size: 50% !important;
+                                    line-height: 1.2 !important; /* line spacing */
+                                }
+
+                                .header-contact i * {
+                                    font-size: 50% !important;
+                                }
+
+                                .space-y-12, .space-y-8 {
+                                    row-gap: 0.5rem !important;
+                                }
+
+                                .section-about h2 {
+                                    margin-bottom: 0.5rem !important;
+                                }
+
+                                .section-about .grid {
+                                    gap: 0.25rem !important;
+                                }
+
+                                .bg-white.rounded-xl.shadow-md.p-6 {
+                                    padding: 0.75rem !important;
+                                }
+
+                                .section-skills .space-y-4 {
+                                    row-gap: 0.5rem !important;
+                                }
+
+                                .section-skills .mb-1 {
+                                    margin-bottom: 0.5rem !important;
+                                }
+
+                                .section-experience {
+                                    row-gap: 0.5rem !important;
+                                    margin-bottom: 0.5rem !important;
+                                }
+
+                                .section-experience li {
+                                    margin-bottom: 0.5rem !important;
+                                }
+
+                                .section-tech {
+                                    row-gap: 0.5rem !important;
+                                }
+
+                                .section-tech * {
+                                    font-size: 50% !important;  
+                                }
+
+                                .section-additional {
+                                    row-gap: 0.5rem !important;
+                                }
+
+                                .section-additional li {
+                                    margin-bottom: 0.5rem !important;
+                                }
+
+                                .section-education {
+                                    row-gap: 0.5rem !important;
+                                }
+
+                                .section-education span {
+                                    margin-bottom: 0.5rem !important;
+                                }
+
+                                body {
+                                    font-family: 'Sarabun', 'Noto Sans Thai', sans-serif !important;
+                                    // word-spacing: 1px;
+                                    // letter-spacing: 0.1px;
+                                }
+                        `;
+                    } else {
+                        pdfStyles.textContent = `
+                            * {
+                                font-size: 60%;
+                            }
                             /* only element mian */
                             body, div, p, span, a, li, section, h3, h2, h1 {
-                                font-size: 70% !important;
+                                font-size: 60% !important;
                             }
 
                             section * {
-                                font-size: 70% !important;
+                                font-size: 60% !important;
                                 margin-bottom: 0px !important;
                                 margin-top: 1px !important;
                             }
 
                             .header * {
-                                font-size: 70% !important;
+                                font-size: 60% !important;
                             }
 
                             .section-header {
@@ -1293,12 +1420,12 @@
                             }
 
                             .header-contact a * {
-                                font-size: 50% !important;
+                                font-size: 60% !important;
                                 line-height: 1.2 !important; /* line spacing */
                             }
 
                             .header-contact i * {
-                                font-size: 50% !important;
+                                font-size: 60% !important;
                             }
 
                             .space-y-12, .space-y-8 {
@@ -1361,7 +1488,8 @@
                             body {
                                 font-family: 'Sarabun', 'Noto Sans Thai', sans-serif !important;
                             }
-                    `;
+                        `;
+                    }
                     content.prepend(pdfStyles);
                     
                     // Hide unwanted elements
@@ -1394,13 +1522,18 @@
                             allowTaint: true,
                             scrollX: 0,
                             scrollY: 0,
+                            // fontFamily: 'Sarabun, sans-serif',
+                            // onclone: function(clonedDoc) {
+                            //     clonedDoc.body.style.fontFamily = 'Sarabun, sans-serif';
+                            //     clonedDoc.body.style.letterSpacing = '0.1px';
+                            // },
                             ignoreElements: (el) => {
                                 return el.tagName === 'SCRIPT' || 
                                        el.classList.contains('no-print');
                             },
                             width: wrapper.offsetWidth,
-                            height: wrapper.offsetHeight,
-                            // height: wrapper.offsetHeight * 1.4, // เพิ่ม buffer สำหรับเนื้อหา
+                            // height: wrapper.offsetHeight,
+                            height: !isMobile ? wrapper.offsetHeight: wrapper.offsetHeight * 1.2, // เพิ่ม buffer สำหรับเนื้อหา mobile
                         },
                         jsPDF: { 
                             unit: 'mm', 
@@ -1429,11 +1562,14 @@
                     // clear temporary container
                     const tempContainer = document.querySelector('div[style*="left: -9999px"]');
                     if (tempContainer) document.body.removeChild(tempContainer);
-                    
+
                     // restore button status
                     btn.innerHTML = originalHTML;
                     btn.disabled = false;
 
+                    forexportPDF(false);
+
+                    isMobile();
                 }
             });
         }
@@ -1915,6 +2051,28 @@
 
             return hours +''+ minutes;
             // return hours + ':' + minutes;
+        }
+
+        async function forexportPDF(pdf) {
+            Array.from(document.querySelectorAll('.web')).forEach(function(element){
+                pdf ? element.classList.remove('hidden') : element.classList.add('hidden');
+            });
+
+            Array.from(document.querySelectorAll('.mobile')).forEach(function(element) {
+                pdf ? element.classList.add('hidden') : element.classList.remove('hidden');
+            });
+        }
+
+        function isMobile() {
+            var isMobile = window.orientation > -1;
+            // console.log(isMobile ? 'Mobile' : 'Not mobile');
+            Array.from(document.querySelectorAll('.web')).forEach(function(element){
+                isMobile ? element.classList.add('hidden') : element.classList.remove('hidden');
+            });
+
+            Array.from(document.querySelectorAll('.mobile')).forEach(function(element){
+                isMobile ? element.classList.remove('hidden') : element.classList.add('hidden');
+            });
         }
 
         function notifyDialog(icon, message) {

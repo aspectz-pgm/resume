@@ -112,6 +112,10 @@ body {
     transform: scale(1.02);
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* for แนวตั้ง */
 @media (orientation: portrait) {
     #lightboxImage {
