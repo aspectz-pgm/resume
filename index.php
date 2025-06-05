@@ -117,7 +117,7 @@
                             <span class="lang-en">Call: 094-4210099</span>
                             <span class="lang-th">โทร: 094-4210099</span>
                         </a>
-                        <a href="https://linkedin.com/in/monkey.dluffy" class="px-4 py-2 bg-[#00B900] text-white rounded-full flex items-center gap-2 hover:bg-green-400 transition">
+                        <a href="https://line.me/ti/p/hPqWUwm2DJ" class="px-4 py-2 bg-[#00B900] text-white rounded-full flex items-center gap-2 hover:bg-green-400 transition" target="_blank">
                             <!-- Line Icon -->
                             <!-- <iconify-icon icon="ri:line-fill" class="text-3xl text-[#00B900] hover:text-[#009900] transition-colors"></iconify-icon> -->
                             <!-- <i class="fab fa-line text-[#00B900] text-2xl"></i> -->
