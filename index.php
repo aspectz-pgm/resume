@@ -604,7 +604,7 @@
                                     data-description="A complete accounting service system that can open sales to invoices, including purchasing and tax systems. It also adds a production management system in the factory, including products, parts, and comprehensive production forecasts."
                                     data-features="Sale System|Purchase System|MRP System|Production System|Inventory Control|Cost Management|Accounting|Tax System"
                                     data-tech="PHP, CSS, Java, JavaScript, SQL SERVER, Canva, Bootstrap, Tailwind, Chat GPT, DeepSeek, Gemini AI"
-                                    data-images="./img/dmcsmfg/1.png|./img/dmcsmfg/2.png|./img/dmcsmfg/3.png|./img/dmcsmfg/4.png|./img/dmcsmfg/5.png|./img/dmcsmfg/6.png|./img/dmcsmfg/7.png|./img/dmcsmfg/8.png|./img/dmcsmfg/9.png">
+                                    data-images="./img/dmcsmfg/0.png|./img/dmcsmfg/1.png|./img/dmcsmfg/2.png|./img/dmcsmfg/3.png|./img/dmcsmfg/4.png|./img/dmcsmfg/5.png|./img/dmcsmfg/6.png|./img/dmcsmfg/7.png|./img/dmcsmfg/8.png|./img/dmcsmfg/9.png">
                                     View Details
                             </button>
                             <button class="view-details-btn w-full bg-black hover:bg-gray-700 text-white py-2 rounded-lg lang-th"
@@ -612,7 +612,7 @@
                                     data-description="ระบบบริการจัดการบัญชีแบบครบวงจร สามารถเปิดการขายจนถึงออกใบเรียกเก็บเงินรวมไปถึงการเปิดใบจัดซื้อและระบบภาษี และยังเพิ่มระบบการจัดการการผลิตในโรงงานมีทั้ง สินค้า ชิ้นส่วน การพยากรณ์การผลิตอย่างครอบคลุมครบวงจร"
                                     data-features="ระบบการขาย|ระบบจัดซื้อ|ระบบ MRP|ระบบการผลิต|การควบคุมสต๊อกสินค้า|การบริหารต้นทุน|ระบบบัญชี|ระบบภาษี"
                                     data-tech="PHP, CSS, Java, JavaScript, SQL SERVER, Canva, Bootstrap, Tailwind, Chat GPT, DeepSeek, Gemini AI"
-                                    data-images="./img/dmcsmfg/1.png|./img/dmcsmfg/2.png|./img/dmcsmfg/3.png|./img/dmcsmfg/4.png|./img/dmcsmfg/5.png|./img/dmcsmfg/6.png|./img/dmcsmfg/7.png|./img/dmcsmfg/8.png|./img/dmcsmfg/9.png">
+                                    data-images="./img/dmcsmfg/0.png|./img/dmcsmfg/1.png|./img/dmcsmfg/2.png|./img/dmcsmfg/3.png|./img/dmcsmfg/4.png|./img/dmcsmfg/5.png|./img/dmcsmfg/6.png|./img/dmcsmfg/7.png|./img/dmcsmfg/8.png|./img/dmcsmfg/9.png">
                                     ดูรายละเอียด
                             </button>
                         </div>
