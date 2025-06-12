@@ -37,6 +37,8 @@
     <script src="./js/utility/html2pdf.bundle.min.js" integrity="sha384-Yv5O+t3uE3hunW8uyrbpPW3iw6/5/Y7HitWJBLgqfMoA36NogMmy+8wWZMpn3HWc" crossorigin="anonymous"></script>
     <!-- PPTXGenJS -->
     <script src="./js/utility/pptxgen.bundle.js" integrity="sha384-Cck14aA9cifjYolcnjebXRfWGkz5ltHMBiG4px/j8GS+xQcb7OhNQWZYyWjQ+UwQ" crossorigin="anonymous"></script>
+    <!-- docx -->
+    <script src="./js/utility/docx.min.js" integrity="sha384-WWGzNJbUWCKFUEexCVTZSZUJ64uYV7FqYVMG855l1ammDY4SH6oLEFuNF6exFtIl" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -76,7 +78,7 @@
             <!-- Header Section -->
             <header class="flex flex-col md:flex-row gap-8 items-center mb-16 section-header">
                 <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                    <img src="./img/profile_01.png" alt="Profile" class="w-full h-full object-cover">
+                    <img src="./img/profile_02.png" alt="Profile" class="w-full h-full object-cover">
                 </div>
                 <div class="flex-1 text-center md:text-left">
                     <div class="flex">
@@ -910,6 +912,13 @@
                     <span class="lang-en">Export PPTX Projects</span>
                     <span class="lang-th">ส่งออก PPTX ผลงาน</span>
                 </button>
+
+                <!-- Export Power Point Button -->
+                <button id="exportDOCX" class="px-6 py-3 border-2 bg-blue-500 border-blue-400 text-white rounded-full font-medium hover:bg-blue-400 hover:text-white transition flex items-center gap-2 no-print">
+                    <i class="fa-regular fa-file-word"></i>
+                    <span class="lang-en">Export DOCX Projects</span>
+                    <span class="lang-th">ส่งออก DOCX ผลงาน</span>
+                </button>
             </div>
         </section>
     </div>
@@ -1033,6 +1042,9 @@
             
             // Initialize PDF export functionality
             initPDFExport();
+
+            // Initialize docx export functionality
+            initDOCExport();
 
             // pdfWithnodeJS();
       
@@ -1236,7 +1248,8 @@
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    <span>Generating PDF...</span>
+                    <span class="lang-en">Generating PDF...</span>
+                    <span class="lang-th">กำลังสร้าง PDF...</span>
                 `;
                 btn.disabled = true;
 
@@ -1593,7 +1606,8 @@
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    <span>Preparing Presentation...</span>
+                    <span class="lang-en">Preparing Presentation...</span>
+                    <span class="lang-th">การเตรียมการนำเสนอ...</span>
                 `;
                 btnppt.disabled = true;
 
@@ -1897,6 +1911,316 @@
                     // restore button status
                     btnppt.innerHTML = originalHTML;
                     btnppt.disabled = false;
+                }
+            });
+        }
+
+        async function initDOCExport() {
+            const exportDOCX = document.getElementById('exportDOCX');
+            if (!exportDOCX) return;
+
+            exportDOCX.addEventListener('click', async function() {
+                const btndoc = this;
+                const originalHTML = btndoc.innerHTML;
+
+                // get current language
+                const currentLang = localStorage.getItem('language') || 'en';
+                // console.log(currentLang);
+                // show loading
+                btndoc.innerHTML = `
+                    <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span class="lang-en">Preparing Presentation...</span>
+                    <span class="lang-th">การเตรียมการนำเสนอผลงาน...</span>
+                `;
+                btndoc.disabled = true;
+
+                try {
+                    const pptxContent = document.getElementById('pptx-content');
+                    if (pptxContent) {
+                        // pptxContent.insertBefore(exportDOCX, pptxContent.firstChild);
+                        const { Document, Paragraph, TextRun, HeadingLevel, Packer, Table, TableRow, TableCell, ImageRun } = docx;
+
+                        // 1. create document structure
+                        const doc = new Document({
+                            styles: {
+                                paragraphStyles: [
+                                    {
+                                        id: 'Normal',
+                                        name: 'Normal',
+                                        run: {
+                                            size: 24, // 12pt
+                                            font: 'Tahoma',
+                                        },
+                                        paragraph: {
+                                            spacing: { line: 276 }, // 1.15 line spacing
+                                        },
+                                    },
+                                    {
+                                        id: 'Heading1',
+                                        name: 'Heading 1',
+                                        run: {
+                                            size: 48, // 24pt
+                                            bold: true,
+                                            color: '2F5496',
+                                            font: 'Tahoma',
+                                        },
+                                        paragraph: {
+                                            spacing: { before: 240, after: 120 }, // space
+                                        },
+                                    },
+                                    {
+                                        id: 'Heading2',
+                                        name: 'Heading 2',
+                                        run: {
+                                            size: 36, // 18pt
+                                            bold: true,
+                                            color: '2F5496',
+                                            font: 'Tahoma',
+                                        },
+                                        paragraph: {
+                                            spacing: { before: 200, after: 100 },
+                                        },
+                                    },
+                                ],
+                            },
+                            sections: [
+                                {
+                                    properties: {},
+                                    children: [
+                                        // 2. cover
+                                        new Paragraph({
+                                            text: currentLang == 'en' ? 'My Creative Projects Portfolio' : 'ผลงานโปรเจกต์สร้างสรรค์ของฉัน',
+                                            heading: HeadingLevel.HEADING_1,
+                                            alignment: 'center',
+                                        }),
+                                        new Paragraph({
+                                            text: currentLang == 'en' ? 'Jetsada Yamto (Boom)': 'เจษฎา แหยมโต (บูม)',
+                                            heading: HeadingLevel.HEADING_2,
+                                            alignment: 'center',
+                                            spacing: { after: 400 },
+                                        }),
+
+                                        // 3. add content
+                                        ...await generateProjectContent(),
+                                    ],
+                                },
+                            ],
+                        });
+
+                        // 4. create link download
+                        Packer.toBlob(doc).then((blob) => {
+                            const link = document.createElement('a');
+                            link.href = URL.createObjectURL(blob);
+                            link.download = currentLang == 'en' ? `My Creative Projects Portfolio_${currentLang}.docx` : `ผลงานโปรเจกต์สร้างสรรค์ของฉัน_${currentLang}.docx`; 
+                            link.click();
+                        });
+
+                        // create file content
+                        async function generateProjectContent() {
+                            const content = [];
+                            const projectCards = document.querySelectorAll('.project-card');
+
+                            for (const card of projectCards) {
+                                // pull data
+                                const title = card.querySelector('h3 .lang-'+currentLang)?.textContent || card.querySelector('h3').textContent;
+                                const description = card.querySelector('.view-details-btn.lang-'+currentLang)?.dataset.description || '';
+                                const category = card.dataset.category || '';
+                                const imageSrc = card.querySelector('img')?.src || '';
+                                const techTags = Array.from(card.querySelectorAll('.flex.flex-wrap.gap-2.mb-4 span')).map(span => span.textContent).join(', ');
+
+                                // add title project
+                                content.push(
+                                    new Paragraph({
+                                        text: title,
+                                        heading: HeadingLevel.HEADING_2,
+                                        spacing: { before: 600, after: 200 },
+                                    })
+                                );
+
+                                // category
+                                if (category) {
+                                    content.push(
+                                        new Paragraph({
+                                            children: [
+                                                new TextRun({
+                                                    text: currentLang == 'en' ? 'Category : ' : 'หมวดหมู่ : ',
+                                                    bold: true,
+                                                }),
+                                                new TextRun({
+                                                    text: category.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+                                                }),
+                                            ],
+                                            spacing: { after: 200 },
+                                        })
+                                    );
+                                }
+
+                                // Images
+                                if (imageSrc) {
+                                    try {
+                                        const imageBlob = await fetch(imageSrc).then(res => res.blob());
+                                        content.push(
+                                            new Paragraph({
+                                                children: [
+                                                    new ImageRun({
+                                                        data: await blobToArrayBuffer(imageBlob),
+                                                        transformation: {
+                                                            width: 400,
+                                                            height: 300,
+                                                        },
+                                                    }),
+                                                ],
+                                                alignment: 'center',
+                                                spacing: { after: 200 },
+                                            })
+                                        );
+                                    } catch (e) {
+                                        console.warn(`ไม่สามารถเพิ่มรูปภาพ ${imageSrc}:`, e);
+                                    }
+                                }
+
+                                // Description
+                                if (description) {
+                                    content.push(
+                                        new Paragraph({
+                                            text: currentLang == 'en' ? 'Description : ' : 'คำอธิบาย : ',
+                                            bold: true,
+                                            spacing: { before: 200, after: 100 },
+                                        }),
+                                        new Paragraph({
+                                            text: description,
+                                            spacing: { after: 200 },
+                                        })
+                                    );
+                                }
+
+                                // Technologies
+                                if (techTags) {
+                                    content.push(
+                                        new Paragraph({
+                                            text: currentLang == 'en' ? 'Technologies' : 'เทคโนโลยีที่ใช้ : ',
+                                            bold: true,
+                                            spacing: { before: 200, after: 100 },
+                                        }),
+                                        new Paragraph({
+                                            text: techTags,
+                                            spacing: { after: 200 },
+                                        })
+                                    );
+                                }
+
+                                // Pull data description
+                                const viewDetailsBtn = card.querySelector('.view-details-btn.lang-'+currentLang);
+                                if (viewDetailsBtn) {
+                                    const features = viewDetailsBtn.dataset.features || '';
+                                    const images = viewDetailsBtn.dataset.images || '';
+
+                                    // Features
+                                    if (features) {
+                                        content.push(
+                                            new Paragraph({
+                                                text: currentLang == 'en' ? 'Features : ' : 'ฟีเจอร์สำคัญ : ',
+                                                bold: true,
+                                                spacing: { before: 200, after: 100 },
+                                            })
+                                        );
+
+                                        features.split('|').forEach(feature => {
+                                            content.push(
+                                                new Paragraph({
+                                                    text: `• ${feature.trim()}`,
+                                                    bullet: { level: 0 },
+                                                    spacing: { after: 100 },
+                                                })
+                                            );
+                                        });
+                                    }
+
+                                    // Images other
+                                    if (images) {
+                                        content.push(
+                                            new Paragraph({
+                                                text: currentLang == 'en' ? 'Project Images' : 'ภาพหน้าผลงาน : ',
+                                                bold: true,
+                                                heading: HeadingLevel.HEADING_3,
+                                                spacing: { before: 400, after: 200 },
+                                            })
+                                        );
+
+                                        const imageArray = images.split('|');
+                                        for (let i = 0; i < Math.min(4, imageArray.length); i++) {
+                                            try {
+                                                const imageBlob = await fetch(imageArray[i]).then(res => res.blob());
+                                                content.push(
+                                                    new Paragraph({
+                                                        children: [
+                                                            new ImageRun({
+                                                                data: await blobToArrayBuffer(imageBlob),
+                                                                transformation: {
+                                                                    width: 300,
+                                                                    height: 225,
+                                                                },
+                                                            }),
+                                                        ],
+                                                        alignment: 'center',
+                                                        spacing: { after: 200 },
+                                                    }),
+                                                    new Paragraph({
+                                                        text: currentLang == 'en' ? `Image of ${i+1}` : `ภาพที่ ${i+1}`,
+                                                        alignment: 'center',
+                                                        size: 20,
+                                                        color: '666666',
+                                                        spacing: { after: 400 },
+                                                    })
+                                                );
+                                            } catch (e) {
+                                                console.warn(`ไม่สามารถเพิ่มรูปภาพ ${imageArray[i]}:`, e);
+                                            }
+                                        }
+                                    }
+                                }
+                               
+                                // add line
+                                content.push(
+                                    new Paragraph({
+                                        children: [
+                                            new TextRun({
+                                                text: '_____________________________________________',
+                                                color: 'CCCCCC',
+                                            }),
+                                        ],
+                                        alignment: 'center',
+                                        spacing: { before: 400, after: 400 },
+                                    })
+                                );
+                            }
+
+                            return content;
+                        }
+
+                        // change Blob to ArrayBuffer
+                        function blobToArrayBuffer(blob) {
+                            return new Promise((resolve, reject) => {
+                                const reader = new FileReader();
+                                reader.onload = () => resolve(reader.result);
+                                reader.onerror = reject;
+                                reader.readAsArrayBuffer(blob);
+                            });
+                        }
+                    }
+
+                    notifyDialog('success', 'Document Word Exported Successfully!');
+
+                } catch (error) {
+                    // console.error('DOCX Export Error:', error);
+                    notifyDialog('warning', 'Export ไม่สำเร็จ:');
+                } finally {
+                    // restore button status
+                    btndoc.innerHTML = originalHTML;
+                    btndoc.disabled = false;
                 }
             });
         }
