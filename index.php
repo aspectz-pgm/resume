@@ -301,8 +301,8 @@
                             <li class="lang-en">• Proficient in Photoshop, SQL Server, Android Studio, MATLAB, MS Office and other programs well.</li>
                             <li class="lang-th">• สามารถใช้ Photoshop, SQL Server, Android Studio, MATLAB, MS Office และโปรแกรมอื่นๆ ได้เป็นอย่างดี</li>
 
-                            <li class="lang-en">• The system can be developed using modern AI architectures.</li>
-                            <li class="lang-th">• สามารถพัฒนาระบบด้วยการใช้สถาปัตยกรรม AI ที่ทันสมัยได้</li>
+                            <!-- <li class="lang-en">• The system can be developed using modern AI architectures.</li>
+                            <li class="lang-th">• สามารถพัฒนาระบบด้วยการใช้สถาปัตยกรรม AI ที่ทันสมัยได้</li> -->
                             
                             <li class="lang-en">• Flutter application development</li>
                             <li class="lang-th">• พัฒนาแอปพลิเคชันมือถือด้วย Flutter</li>
@@ -316,8 +316,8 @@
                             <li class="lang-en">• Perseverance and ready to touch on learning new things at work.</li>
                             <li class="lang-th">• มีความเพียรพยายามและพร้อมที่จะเปิดรับในการเรียนรู้สิ่งใหม่ ๆ ในการทำงาน</li>
 
-                            <!-- <li class="lang-en">• Programming languages: PHP, JavaScript, Java, C, Dart, Bootstrap, Tailwind, Ace Master, datatables</li>
-                            <li class="lang-th">• ภาษาโปรแกรม: PHP, JavaScript, Java, C, Dart, Bootstrap, Tailwind, Ace Master, datatables</li>
+                            <!-- <li class="lang-en">• Programming languages: PHP, JavaScript, Java, C, Dart, TypeScipit</li>
+                            <li class="lang-th">• ภาษาโปรแกรม: PHP, JavaScript, Java, C, Dart, TypeScipit</li>
 
                             <li class="lang-en">• CSS Bootstrap, Tailwind, Ace Master, datatables</li>
                             <li class="lang-th">• CSS Bootstrap, Tailwind, Ace Master, datatables</li> -->
@@ -430,7 +430,7 @@
                                 <span class="px-3 py-1 bg-black text-white rounded-full text-sm">Golang</span>
                                 <span class="px-3 py-1 bg-lime-100 text-lime-800 rounded-full text-sm">ASP.NET Core</span>
                             </div>
-                            <h3 class="font-semibold text-gray-800 mb-2">
+                            <!-- <h3 class="font-semibold text-gray-800 mb-2">
                                 <span class="lang-en">AI</span>
                                 <span class="lang-th">AI</span>
                             </h3>
@@ -439,7 +439,7 @@
                                 <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">DeepSeek</span>
                                 <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Gemini</span>
                                 <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Canva</span>
-                            </div>
+                            </div> -->
                             <!-- ภาษาการเขียนโปรแกรม: เช่น Python, JavaScript, PHP.
                             เฟรมเวิร์ก: เช่น Django, React, Angular, Node.js.
                             ฐานข้อมูล: เช่น MySQL, MongoDB, PostgreSQL.
