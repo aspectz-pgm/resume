@@ -316,10 +316,10 @@
                             <li class="lang-en">• Perseverance and ready to touch on learning new things at work.</li>
                             <li class="lang-th">• มีความเพียรพยายามและพร้อมที่จะเปิดรับในการเรียนรู้สิ่งใหม่ ๆ ในการทำงาน</li>
 
-                            <!-- <li class="lang-en">• Programming languages: PHP, JavaScript, Java, C, Dart, TypeScipit</li>
-                            <li class="lang-th">• ภาษาโปรแกรม: PHP, JavaScript, Java, C, Dart, TypeScipit</li>
+                            <li class="lang-en">• Programming languages: PHP, JavaScript, Java, Dart, TypeScript, C, C#, C++, Golang, Python, HTML, CSS</li>
+                            <li class="lang-th">• ภาษาโปรแกรม: PHP, JavaScript, Java, Dart, TypeScript, C, C#, C++, Golang, Python, HTML, CSS</li>
 
-                            <li class="lang-en">• CSS Bootstrap, Tailwind, Ace Master, datatables</li>
+                            <!-- <li class="lang-en">• CSS Bootstrap, Tailwind, Ace Master, datatables</li>
                             <li class="lang-th">• CSS Bootstrap, Tailwind, Ace Master, datatables</li> -->
                         </ul>
                     </section>
@@ -347,9 +347,18 @@
                                     <div class="skill-bar bg-primary h-2.5 rounded-full" style="width: 95%"></div>
                                 </div>
                             </div>
+                            <!-- <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-dark">TypeScript</span>
+                                    <span class="text-sm text-gray-500">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="skill-bar bg-primary h-2.5 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div> -->
                             <div>
                                 <div class="flex justify-between mb-1">
-                                    <span class="text-sm font-medium text-dark">PHP Laravel</span>
+                                    <span class="text-sm font-medium text-dark">Laravel</span>
                                     <span class="text-sm text-gray-500">Expert</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -395,40 +404,69 @@
                             <span class="lang-en">Tech Stack</span>
                             <span class="lang-th">ชุดเทคโนโลยี</span>
                         </h2>
-                        <div class="flex flex-wrap gap-2">
-                            <h3 class="font-semibold text-gray-800 mb-2">
-                                <span class="lang-en">Frontend</span>
-                                <span class="lang-th">ส่วนหน้า</span>
-                            </h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">JavaScript</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">React</span>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vue.js</span>
-                                <span class="px-3 py-1 bg-sky-100 text-sky-900 rounded-full text-sm">Flutter.js</span>
-                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Git</span>
-                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Node.js</span>
-                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">MySQL</span>
-                                <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Angular</span>
-                                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">AWS</span>
-                                <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Docker</span>
-                                <span class="px-3 py-1 bg-sky-100 text-sky-800 rounded-full text-sm">Tailwind</span>
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Bootstrap</span>
-
-
+                        <div class="flex flex-col gap-2">
+                            <div class="flex-wrap">
+                                <h3 class="font-semibold text-gray-800 mb-2">
+                                    <span class="lang-en">Frontend</span>
+                                    <span class="lang-th">ส่วนหน้า</span>
+                                </h3>
                             </div>
-                            <h3 class="font-semibold text-gray-800 mb-2">
-                                <span class="lang-en">Backend</span>
-                                <span class="lang-th">ส่วนหลัง</span>
-                            </h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Laravel</span>
-                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Express.js</span>
-                                <span class="px-3 py-1 bg-sky-100 text-sky-900 rounded-full text-sm">Flutter.js</span>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Python</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Node.js</span>
-                                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">PostgreSQL</span>
-                                <span class="px-3 py-1 bg-black text-white rounded-full text-sm">Golang</span>
-                                <span class="px-3 py-1 bg-lime-100 text-lime-800 rounded-full text-sm">ASP.NET Core</span>
+                            <div class="flex-wrap">
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">JavaScript</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-green-800 rounded-full text-sm">React</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vue.js</span>
+                                    <span class="px-3 py-1 bg-sky-100 text-sky-900 rounded-full text-sm">Flutter</span>
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Next.js</span>
+                                    <!-- <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Angular</span> -->
+                                    <span class="px-3 py-1 bg-sky-100 text-sky-800 rounded-full text-sm">Tailwind CSS</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <h3 class="font-semibold text-gray-800 mb-2">
+                                    <span class="lang-en">Backend</span>
+                                    <span class="lang-th">ส่วนหลัง</span>
+                                </h3>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Laravel</span>
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Express.js</span>
+                                    <!-- <span class="px-3 py-1 bg-sky-100 text-sky-900 rounded-full text-sm">Flutter.js</span> -->
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Node.js</span>
+                                    <!-- <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">PostgreSQL</span> -->
+                                    <!-- <span class="px-3 py-1 bg-black text-white rounded-full text-sm">Golang</span> -->
+                                    <span class="px-3 py-1 bg-lime-100 text-lime-800 rounded-full text-sm">ASP.NET Core</span>
+                                    <!-- <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Python</span> -->
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <h3 class="font-semibold text-gray-800 mb-2">
+                                    <span class="lang-en">Database</span>
+                                    <span class="lang-th">ฐานข้อมูล</span>
+                                </h3>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">MySQL</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">SQL Server</span>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <h3 class="font-semibold text-gray-800 mb-2">
+                                    <span class="lang-en">DevOps / Tools</span>
+                                    <span class="lang-th">DevOps/ เครื่องมือ</span>
+                                </h3>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Git</span>
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">AWS</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Docker</span>
+                                    <!-- <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CI/CD</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Jenkins</span> -->
+                                </div>
                             </div>
                             <!-- <h3 class="font-semibold text-gray-800 mb-2">
                                 <span class="lang-en">AI</span>
