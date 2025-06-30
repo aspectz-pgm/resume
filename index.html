@@ -100,13 +100,13 @@
                     <p class="text-gray-700 mb-4">
                         <!-- <span class="lang-en">About Me</span>
                         <span class="lang-th">เกี่ยวกับฉัน</span> -->
-                        <span class="lang-en">Full Stack Development Expert with 5+ years of experience building web applications using modern technologies on both frontend and backend. Able to constantly learn and adapt to new technologies. Committed to creating efficient and scalable solutions with clean code to be a leader in web development or programming.</span>
+                        <span class="lang-en">Full Stack Development Expert with 5+ years of experience building web applications using modern technologies on both frontend and backend. Able to constantly learn and adapt to new technologies. Committed to creating efficient and likes to use his free time to study programming.</span>
 
-                        <span class="lang-th mobile">ผู้เชี่ยวชาญด้านการพัฒนาแบบ Full Stack โดยมีความเชี่ยวชาญมีประสบการณ์มากกว่า 5 ปี ในการสร้างแอปพลิเคชันเว็บโดยใช้เทคโนโลยีสมัยใหม่ทั้งในส่วน หน้าบ้าน และ หลังบ้าน สามารถเรียนรู้และปรับตัวให้เข้ากับเทคโนโลยีใหม่ๆ อยู่เสมอ มีความมุ่งมั่นในการสร้างโซลูชันที่มีประสิทธิภาพและปรับขนาดได้พร้อมโค้ดที่สะอาดเพื่อให้เป็นผู้นำในการพัฒนาเว็บหรือเขียนโปรแกรมต่างๆ</span>
+                        <span class="lang-th mobile">ผู้เชี่ยวชาญด้านการพัฒนาแบบ Full Stack โดยมีความเชี่ยวชาญมีประสบการณ์มากกว่า 5 ปี ในการสร้างแอปพลิเคชันเว็บโดยใช้เทคโนโลยีสมัยใหม่ทั้งในส่วน หน้าบ้าน และ หลังบ้าน สามารถเรียนรู้และปรับตัวให้เข้ากับเทคโนโลยีใหม่ๆ อยู่เสมอ มีความมุ่งมั่นในการสร้างโซลูชันที่มีประสิทธิภาพและชอบใช้เวลาว่างให้เป็นประโยชน์ในการศึกษาเขียนโปรแกรม</span>
 
                         <span class="lang-th web text-left">ผู้เชี่ยวชาญด้านการพัฒนาแบบ Full Stack โดยมีความเชี่ยวชาญมีประสบการณ์มากกว่า 5 ปี ในการสร้างแอปพลิเคชันเว็บโดยใช้เทคโนโลยีสมัย</span>
                         <span class="lang-th web text-left">ใหม่ทั้งในส่วน หน้าบ้าน และ หลังบ้าน สามารถเรียนรู้และปรับตัวให้เข้ากับเทคโนโลยีใหม่ๆ อยู่เสมอ มีความมุ่งมั่นในการสร้างโซลูชันที่มี</span>
-                        <span class="lang-th web text-left">ประสิทธิภาพและปรับขนาดได้พร้อมโค้ดที่สะอาดเพื่อให้เป็นผู้นำในการพัฒนาเว็บหรือเขียนโปรแกรมต่างๆ</span>
+                        <span class="lang-th web text-left">ประสิทธิภาพและปรับขนาดได้พร้อมโค้ดที่สะอาดและชอบใช้เวลาว่างให้เป็นประโยชน์ในการศึกษาเขียนโปรแกรม</span>
                         <!-- <span class="lang-en">Experienced Full Stack Developer with 5+ years of expertise in building web applications. Specialized in PHP, JavaScript, Flutter, and database systems.</span>
                         <span class="lang-th">นักพัฒนา Full Stack มากประสบการณ์กว่า 5 ปี มีความเชี่ยวชาญในการสร้างแอปพลิเคชันเว็บ โดยเชี่ยวชาญใน PHP, JavaScript, Flutter และระบบฐานข้อมูล</span> -->
                     </p>
