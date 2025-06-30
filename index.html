@@ -78,7 +78,7 @@
             <!-- Header Section -->
             <header class="flex flex-col md:flex-row gap-8 items-center mb-16 section-header">
                 <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                    <img src="./img/profile_01.png" alt="Profile" class="w-full h-full object-cover">
+                    <img src="./img/profile_03.png" alt="Profile" class="w-full h-full object-cover">
                 </div>
                 <div class="flex-1 text-center md:text-left">
                     <div class="flex">
@@ -450,6 +450,7 @@
                             <div class="flex-wrap">
                                 <div class="flex flex-wrap gap-2">
                                     <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">MySQL</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">ProgreSQL</span>
                                     <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">SQL Server</span>
                                 </div>
                             </div>
