@@ -83,7 +83,7 @@
                 <div class="flex-1 text-center md:text-left">
                     <div class="flex">
                         <label class="text-4xl md:text-5xl font-bold text-dark mb-2">
-                            <span class="lang-en">Jetsada Yamto</span>
+                            <span class="lang-en">Jetsada Yhamto</span>
                             <span class="lang-th">เจษฎา แหยมโต</span>
                         </label>
                         <label class="text-xl md:text-xl font-bold text-dark mb-2 lang-en">(Boom)</label>
@@ -206,6 +206,33 @@
                                 <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-primary border-4 border-blue-100"></div>
                                 <div class="bg-blue-50 p-4 rounded-lg">
                                     <h3 class="font-bold text-lg text-dark">
+                                        <span class="lang-en">Senior Software Engineer</span>
+                                        <span class="lang-th">วิศวกรซอฟต์แวร์ระดับอาวุโส</span>
+                                    </h3>
+                                    <p class="text-secondary font-medium mb-2">
+                                        <span class="lang-en">Plus Dental Clinic .co ,LTD.</span>
+                                        <span class="lang-th">บริษัท พลัส เดนทัล คลินิก จํากัด</span>
+                                    </p>
+                                    <p class="text-blue-700 font-medium mb-2">
+                                        <span class="lang-en">Jun 2025 - Current</span>
+                                        <span class="lang-th">ก.ค. 2025 - ปัจจุบัน</span>
+                                    </p>
+                                    <p class="text-gray-600 text-sm mb-2">
+                                        <span class="lang-en">Develop all web application systems according to the company's needs.</span>
+                                        <span class="lang-th">พัฒนาระบบเว็ปแอพพลิเคชั่นทุกอย่างตามความต้องการของบริษัท</span>
+                                    </p>
+                                    <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                        <li class="lang-en">Design and develop ERP systems for queue management, receipt issuance, and online data collection.</li>
+                                        <li class="lang-th">ออกแบบและพัฒนาระบบ ERP สำหรับการจัดการจองคิว การออกใบเสร็จ และการเก็บข้อมูลออนไลน์</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Experience 2 -->
+                            <div class="timeline-item relative pl-8 border-l-2 border-primary">
+                                <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-primary border-4 border-blue-100"></div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h3 class="font-bold text-lg text-dark">
                                         <span class="lang-en">Senior Full Stack Developer</span>
                                         <span class="lang-th">นักพัฒนา Full Stack ระดับอาวุโส</span>
                                     </h3>
@@ -234,7 +261,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Experience 2 -->
+                            <!-- Experience 3 -->
                             <div class="timeline-item relative pl-8 border-l-2 border-primary">
                                 <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-primary border-4 border-blue-100"></div>
                                 <div class="bg-blue-50 p-4 rounded-lg">
@@ -263,7 +290,7 @@
                                 </div>
                             </div>
 
-                            <!-- Experience 3 -->
+                            <!-- Experience 4 -->
                             <div class="timeline-item relative pl-8 border-l-2 border-primary">
                                 <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-primary border-4 border-blue-100"></div>
                                 <div class="bg-blue-50 p-4 rounded-lg">
@@ -438,7 +465,7 @@
                                     <!-- <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">PostgreSQL</span> -->
                                     <!-- <span class="px-3 py-1 bg-black text-white rounded-full text-sm">Golang</span> -->
                                     <span class="px-3 py-1 bg-lime-100 text-lime-800 rounded-full text-sm">ASP.NET Core</span>
-                                    <!-- <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Python</span> -->
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Python</span>
                                 </div>
                             </div>
                             <div class="flex-wrap">
@@ -620,6 +647,49 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Project 1 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="web">
+                        <img src="./img/project/plus_dental_logo.png" alt="ERP Plus Dental Clinic" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark mb-2">
+                                <span class="lang-en">ERP systems for queue management, receipt issuance, and online data collection.</span>
+                                <span class="lang-th">ระบบ ERP สำหรับการจัดการจองคิว การออกใบเสร็จ และการเก็บข้อมูลออนไลน์</span>
+                            </h3>
+
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Web</span>
+                            <p class="text-gray-600 my-2">
+                                <span class="lang-en">Developed for Plus Dental Clinic .co ,LTD.</span>
+                                <span class="lang-th">พัฒนาสำหรับบริษัท พลัส เดนทัล คลินิก จํากัด</span>
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Vue.js</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">JavaScript</span>
+                                <span class="px-3 py-1 bg-lime-100 text-lime-800 rounded-full text-sm">Python</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">My SQL</span>
+                                <span class="px-3 py-1 bg-black text-white rounded-full text-sm">Html/Css</span>
+                            </div>
+
+                            <button class="view-details-btn w-full bg-black hover:bg-gray-700 text-white py-2 rounded-lg lang-en"
+                                data-title="Queue Management, Receipt Issuance, and Online Data Collection ERP System"
+                                data-description="An integrated ERP system designed for dental clinics, supporting online queue booking, real-time queue management, automated receipt issuance, patient data collection, and centralized operational control to enhance service efficiency."
+                                data-features="Online Queue Booking|Queue Management Dashboard|Digital Receipt Issuance|Patient Data Collection|Appointment Notifications|Staff & Branch Management|Reporting System|Centralized Database"
+                                data-tech="Vue.js, JavaScript, Python, MySQL, HTML, CSS, Tailwind, Bootstrap, Chat GPT, DeepSeek, Gemini AI"
+                                data-images="./img/erp_plusdental/1.png|./img/erp_plusdental/2.png|./img/erp_plusdental/3.png|./img/erp_plusdental/4.png|./img/erp_plusdental/5.png|./img/erp_plusdental/6.png|./img/erp_plusdental/7.png|./img/erp_plusdental/8.png|./img/erp_plusdental/9.png|./img/erp_plusdental/10.png|./img/erp_plusdental/11.png|./img/erp_plusdental/12.png|./img/erp_plusdental/13.png|./img/erp_plusdental/14.png|./img/erp_plusdental/15.png|./img/erp_plusdental/16.png|./img/erp_plusdental/17.png|./img/erp_plusdental/18.png|./img/erp_plusdental/19.png|./img/erp_plusdental/20.png">
+                                View Details
+                            </button>
+
+                            <button class="view-details-btn w-full bg-black hover:bg-gray-700 text-white py-2 rounded-lg lang-th"
+                                data-title="ระบบ ERP สำหรับจัดการคิว ออกใบเสร็จ และเก็บข้อมูลออนไลน์"
+                                data-description="ระบบ ERP แบบครบวงจรที่ออกแบบมาสำหรับคลินิกทันตกรรม รองรับการจองคิวออนไลน์ การจัดการคิวแบบเรียลไทม์ การออกใบเสร็จอัตโนมัติ การเก็บข้อมูลผู้ป่วย และระบบบริหารจัดการที่ช่วยเพิ่มประสิทธิภาพการให้บริการ"
+                                data-features="ระบบจองคิวออนไลน์|แดชบอร์ดจัดการคิว|ระบบออกใบเสร็จดิจิทัล|ระบบเก็บข้อมูลผู้ป่วย|ระบบแจ้งเตือนนัดหมาย|บริหารบุคลากรและสาขา|ระบบรายงาน|ฐานข้อมูลกลาง"
+                                data-tech="Vue.js, JavaScript, Python, MySQL, HTML, CSS, Tailwind, Bootstrap, Chat GPT, DeepSeek, Gemini AI"
+                                data-images="./img/erp_plusdental/1.png|./img/erp_plusdental/2.png|./img/erp_plusdental/3.png|./img/erp_plusdental/4.png|./img/erp_plusdental/5.png|./img/erp_plusdental/6.png|./img/erp_plusdental/7.png|./img/erp_plusdental/8.png|./img/erp_plusdental/9.png|./img/erp_plusdental/10.png|./img/erp_plusdental/11.png|./img/erp_plusdental/12.png|./img/erp_plusdental/13.png|./img/erp_plusdental/14.png|./img/erp_plusdental/15.png|./img/erp_plusdental/16.png|./img/erp_plusdental/17.png|./img/erp_plusdental/18.png|./img/erp_plusdental/19.png|./img/erp_plusdental/20.png">
+                                ดูรายละเอียด
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="web">
                         <img src="./img/project/dmcsmfg_logo.png" alt="DMCS+MFG" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-dark mb-2">
@@ -659,7 +729,7 @@
                         </div>
                     </div>
                     
-                    <!-- Project 2 -->
+                    <!-- Project 3 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="web & mobile">
                         <img src="./img/project/kinyu-siam_logo.png" alt="Kinyu Siam" class="w-full h-48 object-cover">
                         <div class="p-6">
@@ -703,7 +773,7 @@
                         </button>
                     </div>
         
-                    <!-- Project 3 -->
+                    <!-- Project 4 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="web & mobile">
                         <img src="./img/project/kesarsiam_logo.png" alt="KesarSiam" class="mx-auto w-48 h-48 object-cover">
                         <div class="p-6">
@@ -746,7 +816,7 @@
                         </button>
                     </div>
 
-                    <!-- Project 4 -->
+                    <!-- Project 5 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="web">
                         <img src="./img/project/cloud2wms_logo.png" alt="Cloud2WMS" class="w-full h-48 object-cover">
                         <div class="p-6">
@@ -788,7 +858,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 5 -->
+                    <!-- Project 6 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="web">
                         <img src="./img/project/puredi_logo.png" alt="Purchase EDI" class="w-full h-48 object-cover">
                         <div class="p-6">
@@ -830,7 +900,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 6 -->
+                    <!-- Project 7 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="web">
                         <img src="./img/project/cosmaprof-system.png" alt="Cosmaprof System" class="mx-auto w-48 h-48 object-cover">
                         <div class="p-6">
@@ -869,7 +939,7 @@
                         </button>
                     </div>
 
-                    <!-- Project 7 -->
+                    <!-- Project 8 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="mobile">
                         <img src="./img/project/sadpad.png" alt="Sad Pad System" class="w-full h-48 object-cover">
                         <div class="p-6">
@@ -1560,13 +1630,13 @@
                     // wait for the content to finish rendering.
                     await new Promise(resolve => setTimeout(resolve, 1500));
 
-                    // if(currentLang == 'en') {  filename = 'Resume Jetsada Yamto_' + currentLang;
+                    // if(currentLang == 'en') {  filename = 'Resume Jetsada Yhamto_' + currentLang;
                     // } else { let filename = 'เรซูเม่ เจษฎา แหยมโต_' + currentLang;}
 
                     // pptions for PDF generation
                     const opt = {
-                        // filename: `Resume Jetsada Yamto_${currentLang}_${getCurrentTime()}.pdf`,
-                        filename: `Resume Jetsada Yamto_${currentLang}.pdf`,
+                        // filename: `Resume Jetsada Yhamto_${currentLang}_${getCurrentTime()}.pdf`,
+                        filename: `Resume Jetsada Yhamto_${currentLang}.pdf`,
                         image: { type: 'jpeg', quality: 0.98 },
                         html2canvas: { 
                             scale: 2,
@@ -1653,7 +1723,7 @@
                 try {
                     // Initialize PowerPoint
                     const pptx = new PptxGenJS();
-                    pptx.author = 'Jetsada Yamto';
+                    pptx.author = 'Jetsada Yhamto';
                     pptx.company = '';
 
                     // basic setting
@@ -1689,7 +1759,7 @@
             
                     });
 
-                    coverSlide.addText(currentLang == 'en' ? 'Jetsada Yamto (Boom)': 'เจษฎา แหยมโต (บูม)', {
+                    coverSlide.addText(currentLang == 'en' ? 'Jetsada Yhamto (Boom)': 'เจษฎา แหยมโต (บูม)', {
                         x: 0.4, y: 3.5, w: '90%', h: 0.8,
                         fontSize: 24,
                         align: 'center',
@@ -2036,7 +2106,7 @@
                                             alignment: 'center',
                                         }),
                                         new Paragraph({
-                                            text: currentLang == 'en' ? 'Jetsada Yamto (Boom)': 'เจษฎา แหยมโต (บูม)',
+                                            text: currentLang == 'en' ? 'Jetsada Yhamto (Boom)': 'เจษฎา แหยมโต (บูม)',
                                             heading: HeadingLevel.HEADING_2,
                                             alignment: 'center',
                                             spacing: { after: 400 },
