@@ -291,7 +291,7 @@
                             </div>
 
                             <!-- Experience 4 -->
-                            <div class="timeline-item relative pl-8 border-l-2 border-primary">
+                           <!--  <div class="timeline-item relative pl-8 border-l-2 border-primary">
                                 <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-primary border-4 border-blue-100"></div>
                                 <div class="bg-blue-50 p-4 rounded-lg">
                                     <h3 class="font-bold text-lg text-dark">
@@ -311,7 +311,7 @@
                                         <li class="lang-th">ออกแบบและพัฒนาแอปพลิเคชันแอนดรอยด์</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </section>
 
@@ -367,7 +367,7 @@
                         <div class="space-y-4">
                             <div>
                                 <div class="flex justify-between mb-1">
-                                    <span class="text-sm font-medium text-dark">JavaScript</span>
+                                    <span class="text-sm font-medium text-dark">JavaScript / TypeScript</span>
                                     <span class="text-sm text-gray-500">Expert</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -385,7 +385,7 @@
                             </div> -->
                             <div>
                                 <div class="flex justify-between mb-1">
-                                    <span class="text-sm font-medium text-dark">Laravel</span>
+                                    <span class="text-sm font-medium text-dark">Python / PHP</span>
                                     <span class="text-sm text-gray-500">Expert</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5">
