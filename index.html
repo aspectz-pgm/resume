@@ -134,7 +134,16 @@
                             <i class="fa-solid fa-envelope text-white text-xl"></i>
                             <span class="lang-en">Email: boom.ru16@gmail.com</span>
                             <span class="lang-th">อีเมล: boom.ru16@gmail.com</span>
-                        </a>               
+                        </a> 
+                       <div class="relative flex items-center h-10">
+                            <div class="absolute left-0 flex items-center gap-2 p-1 bg-white rounded-lg border border-gray-200 shadow-md min-w-[160px] px-auto">
+                                <img src="./img/resume_qrcode.png" alt="QR Code" class="w-16 h-16 md:w-16 md:h-16 object-contain bg-white">
+                                <span class="text-[10px] text-gray-500 font-bold leading-tight uppercase">
+                                    <span class="lang-en">Scan to visit</span>
+                                    <span class="lang-th">สแกนเพื่อเข้าชม</span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -673,7 +682,7 @@
                                 data-description="An integrated ERP system designed for dental clinics, supporting online queue booking, real-time queue management, automated receipt issuance, patient data collection, and centralized operational control to enhance service efficiency."
                                 data-features="Online Queue Booking|Queue Management Dashboard|Digital Receipt Issuance|Patient Data Collection|Appointment Notifications|Staff & Branch Management|Reporting System|Centralized Database"
                                 data-tech="Vue.js, JavaScript, Python, MySQL, HTML, CSS, Tailwind, Bootstrap, Chat GPT, DeepSeek, Gemini AI"
-                                data-images="./img/erp_plusdental/1.png|./img/erp_plusdental/2.png|./img/erp_plusdental/3.png|./img/erp_plusdental/4.png|./img/erp_plusdental/5.png|./img/erp_plusdental/6.png|./img/erp_plusdental/7.png|./img/erp_plusdental/8.png|./img/erp_plusdental/9.png|./img/erp_plusdental/10.png|./img/erp_plusdental/11.png|./img/erp_plusdental/12.png|./img/erp_plusdental/13.png|./img/erp_plusdental/14.png|./img/erp_plusdental/15.png|./img/erp_plusdental/16.png|./img/erp_plusdental/17.png|./img/erp_plusdental/18.png|./img/erp_plusdental/19.png|./img/erp_plusdental/20.png">
+                                data-images="./img/erp_plusdental/1.png|./img/erp_plusdental/2.png|./img/erp_plusdental/3.png|./img/erp_plusdental/4.png|./img/erp_plusdental/5.png|./img/erp_plusdental/6.png|./img/erp_plusdental/7.png|./img/erp_plusdental/8.png|./img/erp_plusdental/9.png|./img/erp_plusdental/10.png|./img/erp_plusdental/11.png|./img/erp_plusdental/12.png|./img/erp_plusdental/13.png|./img/erp_plusdental/14.png|./img/erp_plusdental/15.png|./img/erp_plusdental/16.png|./img/erp_plusdental/17.png|./img/erp_plusdental/18.png|./img/erp_plusdental/19.png|./img/erp_plusdental/20.png|./img/erp_plusdental/23.png">
                                 View Details
                             </button>
 
@@ -682,7 +691,7 @@
                                 data-description="ระบบ ERP แบบครบวงจรที่ออกแบบมาสำหรับคลินิกทันตกรรม รองรับการจองคิวออนไลน์ การจัดการคิวแบบเรียลไทม์ การออกใบเสร็จอัตโนมัติ การเก็บข้อมูลผู้ป่วย และระบบบริหารจัดการที่ช่วยเพิ่มประสิทธิภาพการให้บริการ"
                                 data-features="ระบบจองคิวออนไลน์|แดชบอร์ดจัดการคิว|ระบบออกใบเสร็จดิจิทัล|ระบบเก็บข้อมูลผู้ป่วย|ระบบแจ้งเตือนนัดหมาย|บริหารบุคลากรและสาขา|ระบบรายงาน|ฐานข้อมูลกลาง"
                                 data-tech="Vue.js, JavaScript, Python, MySQL, HTML, CSS, Tailwind, Bootstrap, Chat GPT, DeepSeek, Gemini AI"
-                                data-images="./img/erp_plusdental/1.png|./img/erp_plusdental/2.png|./img/erp_plusdental/3.png|./img/erp_plusdental/4.png|./img/erp_plusdental/5.png|./img/erp_plusdental/6.png|./img/erp_plusdental/7.png|./img/erp_plusdental/8.png|./img/erp_plusdental/9.png|./img/erp_plusdental/10.png|./img/erp_plusdental/11.png|./img/erp_plusdental/12.png|./img/erp_plusdental/13.png|./img/erp_plusdental/14.png|./img/erp_plusdental/15.png|./img/erp_plusdental/16.png|./img/erp_plusdental/17.png|./img/erp_plusdental/18.png|./img/erp_plusdental/19.png|./img/erp_plusdental/20.png">
+                                data-images="./img/erp_plusdental/1.png|./img/erp_plusdental/2.png|./img/erp_plusdental/3.png|./img/erp_plusdental/4.png|./img/erp_plusdental/5.png|./img/erp_plusdental/6.png|./img/erp_plusdental/7.png|./img/erp_plusdental/8.png|./img/erp_plusdental/9.png|./img/erp_plusdental/10.png|./img/erp_plusdental/11.png|./img/erp_plusdental/12.png|./img/erp_plusdental/13.png|./img/erp_plusdental/14.png|./img/erp_plusdental/15.png|./img/erp_plusdental/16.png|./img/erp_plusdental/17.png|./img/erp_plusdental/18.png|./img/erp_plusdental/19.png|./img/erp_plusdental/20.png|./img/erp_plusdental/23.png">
                                 ดูรายละเอียด
                             </button>
                         </div>
