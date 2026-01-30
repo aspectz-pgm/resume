@@ -233,6 +233,18 @@
                                     <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
                                         <li class="lang-en">Design and develop ERP systems for queue management, receipt issuance, and online data collection.</li>
                                         <li class="lang-th">ออกแบบและพัฒนาระบบ ERP สำหรับการจัดการจองคิว การออกใบเสร็จ และการเก็บข้อมูลออนไลน์</li>
+
+                                        <!-- <li class="lang-en">Develop internal Enterprise Resource Planning (ERP) web systems.</li>
+                                        <li class="lang-th">พัฒนาระบบเว็บไซต์ ERP ภายในองค์กร</li>
+
+                                        <li class="lang-en">Develop web-based systems for queue management, patient screening, and customized system requirements.</li>
+                                        <li class="lang-th">พัฒนาระบบเว็บไซต์ การจองคิว และรันคิว และการคัดกรองคนไข้ รวมถึงความต้องการในส่วนอื่นๆ ของระบบ</li>
+
+                                        <li class="lang-en">Develop automated LINE notification systems using Apache Airflow.</li>
+                                        <li class="lang-th">พัฒนาระบบการส่ง LINE Automation ด้วย Airflow</li>
+
+                                        <li class="lang-en">Troubleshoot and resolve internal system issues within the organization.</li>
+                                        <li class="lang-th">แก้ไขปัญหาของระบบภายในองค์กร</li> -->
                                     </ul>
                                 </div>
                             </div>
