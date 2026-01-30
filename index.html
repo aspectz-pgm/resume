@@ -262,7 +262,7 @@
                                         <span class="lang-th">บริษัท คลาวด์ทูเวิร์ค (ไทยแลนด์) จำกัด</span>
                                     </p>
                                     <p class="text-blue-700 font-medium mb-2">
-                                        <span class="lang-en">Nov 2020 - Apr 2025</span>
+                                        <span class="lang-en">Nov 2020 - May 2025</span>
                                         <span class="lang-th">พ.ย. 2563 - พ.ค. 2568</span>
                                     </p>
                                     <p class="text-gray-600 text-sm mb-2">
