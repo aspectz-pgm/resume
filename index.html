@@ -513,7 +513,7 @@
                                     <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Git</span>
                                     <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">AWS</span>
                                     <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Docker</span>
-                                    <span class="px-3 py-1 bg-red-100 text-sky-800 rounded-full text-sm"> Airflow</span>
+                                    <span class="px-3 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"> Airflow</span>
                                     <!-- <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CI/CD</span>
                                     <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Jenkins</span> -->
                                 </div>
